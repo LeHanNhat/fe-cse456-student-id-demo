@@ -29,4 +29,12 @@ public class Student {
     @ManyToOne
     @JoinColumn(name = "major_id")
     private Major major;
+
+
+    public Student(String id, String name, int yearOfBirth, double gpa) {
+        this.id = id;
+        this.name = name;
+        this.yearOfBirth = yearOfBirth;
+        this.gpa = gpa;
+    }
 }
